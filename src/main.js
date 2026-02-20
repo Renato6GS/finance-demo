@@ -1,8 +1,8 @@
-import "./style.css";
-import teamData from "./data/team.json";
+import './style.css';
+import teamData from './data/team.json';
 
 // --- Render Team Members ---
-const teamGrid = document.getElementById("team-grid");
+const teamGrid = document.getElementById('team-grid');
 if (teamGrid) {
   teamGrid.innerHTML = teamData.members
     .map(
@@ -22,13 +22,13 @@ if (teamGrid) {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#fff" fill-rule="evenodd" d="M10.293 16.707a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L14.586 9H3a1 1 0 0 0 0 2h11.586l-4.293 4.293a1 1 0 0 0 0 1.414Z" clip-rule="evenodd"/></svg>
       </a>
     </li>
-  `
+  `,
     )
-    .join("");
+    .join('');
 }
 
 // --- Render Advisers ---
-const advisersList = document.getElementById("advisers-list");
+const advisersList = document.getElementById('advisers-list');
 if (advisersList) {
   advisersList.innerHTML = teamData.advisers
     .map(
@@ -53,16 +53,16 @@ if (advisersList) {
         </svg>
       </a>
     </li>
-  `
+  `,
     )
-    .join("");
+    .join('');
 }
 
 // --- Hamburger Menu ---
-const hamburger = document.getElementById("hamburger");
-const header = document.getElementById("header");
+const hamburger = document.getElementById('hamburger');
+const header = document.getElementById('header');
 if (hamburger && header) {
-  hamburger.addEventListener("click", () => {
-    header.classList.toggle("is-open");
+  hamburger.addEventListener('click', () => {
+    header.classList.toggle('is-open');
   });
 }
