@@ -1,0 +1,58 @@
+{
+  "members": [
+    {
+      "name": "Sofia Lin test",
+      "role": "Founder & CEO",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=539&h=315&fit=crop",
+      "link": "#"
+    },
+    {
+      "name": "James Carter",
+      "role": "Finance Manager",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=539&h=315&fit=crop",
+      "link": "#"
+    },
+    {
+      "name": "Emily Worlds",
+      "role": "Chief Operations Officer",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=539&h=315&fit=crop",
+      "link": "#"
+    },
+    {
+      "name": "Marcus Reed",
+      "role": "Operations Lead",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=539&h=315&fit=crop",
+      "link": "#"
+    }
+  ],
+  "advisers": [
+    {
+      "name": "John Doe",
+      "role": "Adviser, Example Company",
+      "description": "Creates tools that make business feel simpler and more human.",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face",
+      "link": "#"
+    },
+    {
+      "name": "William Mark",
+      "role": "Adviser, Example Company",
+      "description": "Turns complex numbers into clear financial decisions.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face",
+      "link": "#"
+    },
+    {
+      "name": "Jessica Thomas",
+      "role": "Adviser, Example Company",
+      "description": "Streamlines systems to help teams work smarter and stay organized.",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face",
+      "link": "#"
+    },
+    {
+      "name": "Gabe Doe",
+      "role": "Adviser, Example Company",
+      "description": "Builds people-first cultures that scale with care.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop&crop=face",
+      "link": "#"
+    }
+  ]
+}

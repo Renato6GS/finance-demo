@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Global Finance Starter</title>
+    <meta name="description" content="A high-performance financial website template" />
+  </head>
+  <body class="font-inter antialiased bg-background text-foreground">
+
+    <!-- ========== HEADER ========== -->
+    <header class="group absolute top-0 right-0 left-0 border-b border-border z-50" id="header">
+      <nav class="max-w-[1016px] mx-auto px-6 flex justify-between items-center md:grid md:grid-cols-3 py-6">
+        <div class="flex items-center gap-1 z-50">
+          <a href="/" class="text-white font-adamina text-lg">Global Finance</a>
+        </div>
+
+        <ul class="fixed inset-0 flex flex-col items-center justify-center gap-8 bg-primary text-white text-2xl transform transition-transform duration-300 md:static md:flex-row md:bg-transparent md:text-[0.81rem] md:gap-0 md:translate-x-0 translate-x-full group-[.is-open]:translate-x-0">
+          <li><a href="#features" class="block px-4 py-2 capitalize hover:opacity-80">Platform</a></li>
+          <li><a href="#stats" class="block px-4 py-2 capitalize hover:opacity-80">Membership</a></li>
+          <li><a href="#reports" class="block px-4 py-2 capitalize hover:opacity-80">Reports</a></li>
+          <li><a href="#team" class="block px-4 py-2 capitalize hover:opacity-80">Team</a></li>
+          <li>
+            <a href="#" class="mt-8 button--glass text-white px-6 py-3 text-lg bg-black/20 backdrop-blur-sm md:hidden">
+              Become a Member
+            </a>
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-4 md:justify-self-end">
+          <a href="#" class="button--glass hidden md:block text-white px-3 py-1.5 text-sm bg-black/20 backdrop-blur-sm">
+            Become a Member
+          </a>
+          <button
+            class="md:hidden flex flex-col justify-between w-6 h-5 z-50 relative"
+            id="hamburger"
+            aria-label="Toggle Navigation"
+          >
+            <span class="block h-0.5 w-full bg-white transition-transform duration-300 group-[.is-open]:translate-y-[9px] group-[.is-open]:rotate-45"></span>
+            <span class="block h-0.5 w-full bg-white transition-opacity duration-300 group-[.is-open]:opacity-0"></span>
+            <span class="block h-0.5 w-full bg-white transition-transform duration-300 group-[.is-open]:-translate-y-[9px] group-[.is-open]:-rotate-45"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="space-y-16 md:space-y-32">
+
+      <!-- ========== HERO ========== -->
+      <section>
+        <div class="relative min-h-[82vh] flex items-end pt-40 before:absolute before:inset-0 before:bg-black/55 before:mix-blend-multiply before:z-10">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1440&h=685&fit=crop"
+            alt="Modern building"
+            class="absolute z-0 w-full h-full object-cover object-top"
+          />
+
+          <div class="relative z-20 w-full pt-10">
+            <div class="max-w-[624px] mx-auto mb-28 px-6 flex flex-col gap-y-8 justify-center items-center">
+              <div class="max-w-[624px] text-center">
+                <h2 class="text-white text-3xl md:text-5xl leading-[110%] -tracking-[1.92px] font-adamina mb-4">
+                  The Sky Is Clearer When Your Finances Make Sense.
+                </h2>
+                <p class="text-white leading-[150%] -tracking-[0.32px]">
+                  Cut through the noise. Connect with people, not profiles.
+                </p>
+              </div>
+              <a href="#" class="inline-block px-5 py-4 text-center -tracking-[0.64px] font-medium rounded-sm bg-primary text-white">
+                Become a Member
+              </a>
+            </div>
+
+            <!-- Partners -->
+            <div class="max-w-[1016px] mx-auto px-6">
+              <div class="flex flex-col md:flex-row gap-8 items-center justify-between w-full py-16">
+                <h2 class="text-white shrink-0">Our partners</h2>
+                <ul class="grid grid-cols-2 sm:grid-cols-5 gap-x-5 gap-y-10">
+                  <li><span class="text-white/65 text-sm font-medium">Stripe</span></li>
+                  <li><span class="text-white/65 text-sm font-medium">Canva</span></li>
+                  <li><span class="text-white/65 text-sm font-medium">HubSpot</span></li>
+                  <li><span class="text-white/65 text-sm font-medium">GitHub</span></li>
+                  <li><span class="text-white/65 text-sm font-medium">Microsoft</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== BANNER SPLIT ========== -->
+      <section>
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-16 p-6 md:p-16 bg-white">
+            <div class="flex flex-col justify-between items-start gap-8">
+              <h2 class="inline-flex gap-4 items-center text-black">
+                <div class="bg-primary p-1 rounded-sm">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6445 2.64447C13.6334 2.64447 14.6001 2.93771 15.4224 3.48712C16.2446 4.03653 16.8855 4.81742 17.2639 5.73105C17.6424 6.64468 17.7414 7.65002 17.5485 8.61992C17.3555 9.58983 16.8793 10.4807 16.1801 11.18C15.4808 11.8793 14.5899 12.3555 13.62 12.5484C12.6501 12.7413 11.6447 12.6423 10.7311 12.2639C9.81748 11.8854 9.03659 11.2446 8.48718 10.4223C7.93778 9.60008 7.64453 8.63338 7.64453 7.64447L7.64953 7.42747C7.70545 6.14022 8.25614 4.92425 9.18675 4.03313C10.1174 3.14201 11.3561 2.64454 12.6445 2.64447ZM14.6445 14.6445C15.9706 14.6445 17.2424 15.1713 18.1801 16.1089C19.1177 17.0466 19.6445 18.3184 19.6445 19.6445V20.6445C19.6445 21.1749 19.4338 21.6836 19.0587 22.0587C18.6837 22.4338 18.175 22.6445 17.6445 22.6445H7.64453C7.1141 22.6445 6.60539 22.4338 6.23032 22.0587C5.85524 21.6836 5.64453 21.1749 5.64453 20.6445V19.6445C5.64453 18.3184 6.17132 17.0466 7.109 16.1089C8.04668 15.1713 9.31845 14.6445 10.6445 14.6445H14.6445Z" fill="white"/></svg>
+                </div>
+                <span>Membership</span>
+              </h2>
+              <div class="flex flex-col justify-center items-start grow max-w-[476px]">
+                <h3 class="text-black text-3xl lg:text-5xl leading-[120%] font-adamina mb-4">Built for Teams That Are Growing with Purpose</h3>
+                <p class="mb-8 text-black opacity-65">
+                  Designed to scale with you—no bloat, no complexity.
+                </p>
+              </div>
+              <a href="#" class="inline-block px-5 py-4 text-center -tracking-[0.64px] font-medium rounded-sm bg-primary text-white">
+                Become a Member
+              </a>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=453&h=543&fit=crop"
+                alt="Team collaboration"
+                class="w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FEATURES ========== -->
+      <section id="features">
+        <div class="container mx-auto px-6">
+          <h2 class="text-black text-3xl md:text-5xl leading-[120%] font-adamina mb-8 px-6 max-w-[430px]">Stay Aligned, Stay Compliant</h2>
+
+          <ul class="grid md:grid-cols-3 gap-6">
+            <li class="bg-white">
+              <h3 class="p-6 text-black text-xl font-adamina capitalize">Flow Compliance</h3>
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=350&h=242&fit=crop" alt="Flow Compliance" class="w-full" loading="lazy" />
+              <p class="p-6 text-black opacity-65">Stay ahead of regulatory demands with automated workflows that ensure every financial process stays audit-ready.</p>
+            </li>
+            <li class="bg-white">
+              <h3 class="p-6 text-black text-xl font-adamina capitalize">Finance Analysis</h3>
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=350&h=242&fit=crop" alt="Finance Analysis" class="w-full" loading="lazy" />
+              <p class="p-6 text-black opacity-65">Turn complex data into actionable insights with dynamic reports and visual dashboards that help you make better decisions, faster.</p>
+            </li>
+            <li class="bg-white">
+              <h3 class="p-6 text-black text-xl font-adamina capitalize">Real-time Tracking</h3>
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=350&h=242&fit=crop" alt="Real-time Tracking" class="w-full" loading="lazy" />
+              <p class="p-6 text-black opacity-65">Monitor financial activity as it happens—no delays, no surprises. Stay in sync with your team, your goals, and your bottom line.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== STATS ========== -->
+      <section id="stats">
+        <div class="container mx-auto px-6">
+          <h3 class="text-black text-3xl md:text-5xl leading-[120%] font-adamina mb-4 max-w-[580px]">Built for Teams That Are Growing with Purpose</h3>
+          <p class="mb-8 text-black opacity-65">Designed to scale with you—no bloat, no complexity.</p>
+        </div>
+
+        <div class="container mx-auto px-6">
+          <ul class="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <li class="p-8 bg-primary text-white">
+              <span class="block text-5xl md:text-4xl lg:text-5xl font-adamina capitalize mb-20 md:mb-36">50+</span>
+              <h3 class="opacity-65">Years in the business</h3>
+            </li>
+            <li class="p-8 bg-white text-black">
+              <span class="block text-5xl md:text-4xl lg:text-5xl font-adamina capitalize mb-20 md:mb-36">150+</span>
+              <h3 class="opacity-65">Trusted Partners</h3>
+            </li>
+            <li class="p-8 bg-white text-black">
+              <span class="block text-5xl md:text-4xl lg:text-5xl font-adamina capitalize mb-20 md:mb-36">$500m</span>
+              <h3 class="opacity-65">Transactions Tracked</h3>
+            </li>
+            <li class="p-8 bg-white text-black">
+              <span class="block text-5xl md:text-4xl lg:text-5xl font-adamina capitalize mb-20 md:mb-36">25</span>
+              <h3 class="opacity-65">Countries Served</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== REPORTS ========== -->
+      <section id="reports" class="bg-black">
+        <div class="container mx-auto px-6 py-24 flex flex-col items-center gap-16">
+          <h2 class="text-white text-3xl md:text-5xl text-center leading-[120%] font-adamina mb-16 px-6">Latest Reports</h2>
+
+          <ul class="grid md:grid-cols-3 gap-6">
+            <li>
+              <a href="#" class="block group">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=350&h=242&fit=crop" alt="Report 1" class="w-full mb-4" loading="lazy" />
+                <h3 class="text-white text-lg font-adamina group-hover:underline">Clarity Over Complexity: How to Finally Understand Your Business Finances</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block group">
+                <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=350&h=242&fit=crop" alt="Report 2" class="w-full mb-4" loading="lazy" />
+                <h3 class="text-white text-lg font-adamina group-hover:underline">From Chaos to Control: Building a Financial System That Works</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block group">
+                <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=350&h=242&fit=crop" alt="Report 3" class="w-full mb-4" loading="lazy" />
+                <h3 class="text-white text-lg font-adamina group-hover:underline">The Hidden Cost of Manual Financial Tracking (And How to Fix It)</h3>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#" class="inline-block px-5 py-4 text-center -tracking-[0.64px] font-medium rounded-sm bg-white text-black">
+            See all reports
+          </a>
+        </div>
+      </section>
+
+      <!-- ========== TESTIMONIALS ========== -->
+      <section>
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-16 p-16 bg-white">
+            <div class="pt-12 pl-12 bg-primary self-start">
+              <img
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=405&h=494&fit=crop"
+                alt="Testimonial"
+                class="rounded-tl-xl w-full"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-col justify-between items-start gap-8">
+              <h2 class="inline-flex gap-4 items-center text-black">
+                <div class="bg-primary p-1 rounded-sm">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6445 2.64447C13.6334 2.64447 14.6001 2.93771 15.4224 3.48712C16.2446 4.03653 16.8855 4.81742 17.2639 5.73105C17.6424 6.64468 17.7414 7.65002 17.5485 8.61992C17.3555 9.58983 16.8793 10.4807 16.1801 11.18C15.4808 11.8793 14.5899 12.3555 13.62 12.5484C12.6501 12.7413 11.6447 12.6423 10.7311 12.2639C9.81748 11.8854 9.03659 11.2446 8.48718 10.4223C7.93778 9.60008 7.64453 8.63338 7.64453 7.64447L7.64953 7.42747C7.70545 6.14022 8.25614 4.92425 9.18675 4.03313C10.1174 3.14201 11.3561 2.64454 12.6445 2.64447ZM14.6445 14.6445C15.9706 14.6445 17.2424 15.1713 18.1801 16.1089C19.1177 17.0466 19.6445 18.3184 19.6445 19.6445V20.6445C19.6445 21.1749 19.4338 21.6836 19.0587 22.0587C18.6837 22.4338 18.175 22.6445 17.6445 22.6445H7.64453C7.1141 22.6445 6.60539 22.4338 6.23032 22.0587C5.85524 21.6836 5.64453 21.1749 5.64453 20.6445V19.6445C5.64453 18.3184 6.17132 17.0466 7.109 16.1089C8.04668 15.1713 9.31845 14.6445 10.6445 14.6445H14.6445Z" fill="white"/></svg>
+                </div>
+                <span>What they say</span>
+              </h2>
+              <div>
+                <p class="text-black text-2xl lg:text-4xl leading-[140%] font-adamina mb-4">"Before we switched, managing our finances felt like guesswork. Now everything's clear, organized, and actually enjoyable."</p>
+                <div class="flex gap-2 items-center p-3 text-black bg-[#F4F5F5]">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <circle cx="16" cy="16" r="15.7648" fill="url(#paint0_radial)" stroke="#FAF8C8" stroke-width="0.4704"/>
+                      <defs>
+                      <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16 16) rotate(90) scale(16)">
+                      <stop stop-color="#F77600"/>
+                      <stop offset="1" stop-color="#F7DE00"/>
+                      </radialGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>John Doe</strong>, Operations Lead
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TEAM (rendered by JS from team.json) ========== -->
+      <section id="team">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-5xl text-center font-adamina mb-16 px-6">Meet The Team</h2>
+          <ul id="team-grid" class="grid md:grid-cols-2 gap-y-16 gap-x-5">
+            <!-- Rendered dynamically from src/data/team.json -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== ADVISERS (rendered by JS from team.json) ========== -->
+      <section>
+        <div class="container mx-auto px-6">
+          <h2 class="text-black text-3xl md:text-5xl leading-[120%] font-adamina mb-8 px-6 max-w-[430px]">Advisers</h2>
+          <ul id="advisers-list" class="space-y-3">
+            <!-- Rendered dynamically from src/data/team.json -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== CTA BANNER ========== -->
+      <section
+        class="bg-no-repeat bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1440&fit=crop&q=90')"
+      >
+        <div class="container mx-auto flex flex-col justify-between items-start min-h-[80vh] py-16 px-6">
+          <h2 class="inline-flex gap-4 items-center p-2 bg-black/30 backdrop-blur border border-transparent text-white" style="border-image: linear-gradient(to right, #ffffff14, #ffffff17) 1">
+            <div class="bg-primary p-1 rounded-sm">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6445 2.64447C13.6334 2.64447 14.6001 2.93771 15.4224 3.48712C16.2446 4.03653 16.8855 4.81742 17.2639 5.73105C17.6424 6.64468 17.7414 7.65002 17.5485 8.61992C17.3555 9.58983 16.8793 10.4807 16.1801 11.18C15.4808 11.8793 14.5899 12.3555 13.62 12.5484C12.6501 12.7413 11.6447 12.6423 10.7311 12.2639C9.81748 11.8854 9.03659 11.2446 8.48718 10.4223C7.93778 9.60008 7.64453 8.63338 7.64453 7.64447L7.64953 7.42747C7.70545 6.14022 8.25614 4.92425 9.18675 4.03313C10.1174 3.14201 11.3561 2.64454 12.6445 2.64447ZM14.6445 14.6445C15.9706 14.6445 17.2424 15.1713 18.1801 16.1089C19.1177 17.0466 19.6445 18.3184 19.6445 19.6445V20.6445C19.6445 21.1749 19.4338 21.6836 19.0587 22.0587C18.6837 22.4338 18.175 22.6445 17.6445 22.6445H7.64453C7.1141 22.6445 6.60539 22.4338 6.23032 22.0587C5.85524 21.6836 5.64453 21.1749 5.64453 20.6445V19.6445C5.64453 18.3184 6.17132 17.0466 7.109 16.1089C8.04668 15.1713 9.31845 14.6445 10.6445 14.6445H14.6445Z" fill="white"/></svg>
+            </div>
+            <span>Membership</span>
+          </h2>
+          <div class="max-w-[474px]">
+            <h2 class="text-white text-3xl md:text-5xl leading-[120%] font-adamina mb-10">See Your Finances in a Whole New Light</h2>
+            <a href="#" class="inline-block px-5 py-4 text-center -tracking-[0.64px] font-medium rounded-sm bg-primary text-white">
+              Become a Member
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="w-full text-white bg-[#0F0F0F]">
+      <div class="container mx-auto px-6 py-16">
+        <div class="grid lg:grid-cols-6 gap-x-5 gap-y-10">
+          <div class="lg:col-span-2">
+            <a href="/" class="font-adamina text-lg">Global Finance</a>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="mb-8">
+              <h2 class="text-xl font-medium mb-4">Company Details</h2>
+              <p class="max-w-[415px] opacity-65">We build intuitive financial tools that help growing teams track, understand, and manage their money</p>
+            </div>
+            <address class="not-italic space-y-3">
+              <div class="flex items-center gap-3">
+                <svg class="w-4 h-4 opacity-40" viewBox="0 0 16 16" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.49951V12.4995C12 12.8973 11.842 13.2789 11.5607 13.5602C11.2794 13.8415 10.8978 13.9995 10.5 13.9995H5.5C5.10218 13.9995 4.72064 13.8415 4.43934 13.5602C4.15804 13.2789 4 12.8973 4 12.4995V3.49951C4 3.10169 4.15804 2.72016 4.43934 2.43885C4.72064 2.15755 5.10218 1.99951 5.5 1.99951H10.5C10.8978 1.99951 11.2794 2.15755 11.5607 2.43885C11.842 2.72016 12 3.10169 12 3.49951Z" fill="white"/></svg>
+                <a href="tel:+1222333444">+1 222 333 444</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-4 h-4 opacity-40" viewBox="0 0 16 16" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 7.99951H13.5V10.9995C13.5 11.3973 13.342 11.7789 13.0607 12.0602C12.7794 12.3415 12.3978 12.4995 12 12.4995H4C3.60218 12.4995 3.22064 12.3415 2.93934 12.0602C2.65804 11.7789 2.5 11.3973 2.5 10.9995V7.99951Z" fill="white"/></svg>
+                <a href="mailto:contact@company.com">contact@company.com</a>
+              </div>
+            </address>
+          </div>
+
+          <nav>
+            <ul class="space-y-6">
+              <li><a href="#features" class="text-xl font-medium">Platform</a></li>
+              <li><a href="#stats" class="text-xl font-medium">Membership</a></li>
+              <li><a href="#reports" class="text-xl font-medium">Reports</a></li>
+              <li><a href="#team" class="text-xl font-medium">Team</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-6 pt-6 pb-16 border-solid border-t border-t-border">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="opacity-65">All Rights Reserved</p>
+          <div class="flex gap-6">
+            <a href="#">Terms & Conditions</a>
+            <span class="opacity-65">&bull;</span>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
